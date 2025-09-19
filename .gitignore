@@ -1,80 +1,90 @@
 # ===================================================================
-# Created by https://www.toptal.com/developers/gitignore/api/java,intellij,maven,gradle
-# Edit at https://www.toptal.com/developers/gitignore?templates=java,intellij,maven,gradle
+# A comprehensive .gitignore for Java projects
+# Covers IntelliJ IDEA, Eclipse, NetBeans, VS Code, build tools, and OS files.
 # ===================================================================
 
 # ===================================================================
-# Operating System Files
+# Build Tools & Java Artifacts
 # ===================================================================
 
-# Mac
-.DS_Store
-.AppleDouble
-.LSOverride
+# Maven
+target/
 
-# Thumbnails
-._*
-Thumbs.db
+# Gradle
+.gradle/
+build/
 
-# Windows
-ehthumbs.db
-ehthumbs_vista.db
-Desktop.ini
+# Compiled Java class files
+*.class
+
+# Log files
+*.log
+
+# Packaged archives
+*.jar
+*.war
+*.ear
+
+# Java HotSpot VM crash reports
+hs_err_pid*
+
 
 # ===================================================================
 # IntelliJ IDEA
 # ===================================================================
 
-# Covers IDE-specific configuration files and caches.
+# User-specific workspace settings and caches
 .idea/
+
+# Module configuration files
 *.iml
-*.ipr
-*.iws
+
+# Default compiled output directory
 out/
-gen/
-modules.xml
-workspace.xml
-tasks.xml
-shelf/
+
 
 # ===================================================================
-# Java
+# Eclipse
 # ===================================================================
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
 
-# Compiled class files and packages
-*.class
-*.jar
-*.war
-*.ear
-target/
-build/
+# Default compiled output directory
+bin/
 
-# Log files
-*.log
-hs_err_pid*
-
-# ===================================================================
-# Maven
-# ===================================================================
-
-pom.xml.tag
-pom.xml.releaseBackup
-pom.xml.versionsBackup
-pom.xml.next
-release.properties
-dependency-reduced-pom.xml
-buildNumber.properties
 
 # ===================================================================
-# Gradle
+# NetBeans
+# ===================================================================
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+
+# ===================================================================
+# VS Code
+# ===================================================================
+.vscode/
+
+
+# ===================================================================
+# Operating System Files
 # ===================================================================
 
-.gradle/
-build/
-!build/cache/
-!build/reports/
-!build/test-results/
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
 
-# End of https://www.toptal.com/developers/gitignore/api/java,intellij,maven,gradle
-# ===================================================================
-.vscode
+# Windows
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
