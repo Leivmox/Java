@@ -1,0 +1,80 @@
+# ===================================================================
+# Created by https://www.toptal.com/developers/gitignore/api/java,intellij,maven,gradle
+# Edit at https://www.toptal.com/developers/gitignore?templates=java,intellij,maven,gradle
+# ===================================================================
+
+# ===================================================================
+# Operating System Files
+# ===================================================================
+
+# Mac
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+Thumbs.db
+
+# Windows
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+
+# ===================================================================
+# IntelliJ IDEA
+# ===================================================================
+
+# Covers IDE-specific configuration files and caches.
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+gen/
+modules.xml
+workspace.xml
+tasks.xml
+shelf/
+
+# ===================================================================
+# Java
+# ===================================================================
+
+# Compiled class files and packages
+*.class
+*.jar
+*.war
+*.ear
+target/
+build/
+
+# Log files
+*.log
+hs_err_pid*
+
+# ===================================================================
+# Maven
+# ===================================================================
+
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+
+# ===================================================================
+# Gradle
+# ===================================================================
+
+.gradle/
+build/
+!build/cache/
+!build/reports/
+!build/test-results/
+
+# End of https://www.toptal.com/developers/gitignore/api/java,intellij,maven,gradle
+# ===================================================================
+.vscode
