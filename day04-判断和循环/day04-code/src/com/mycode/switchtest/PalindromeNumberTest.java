@@ -9,14 +9,15 @@ public class PalindromeNumberTest {
         int num = sc.nextInt();
         int tmp = num;
         //1234
+        //10201
         int x = 0;
         while (num != 0) {
             x = x * 10 + num % 10;
             num = num / 10;
 
-//            System.out.println("x is " + x);
-//            System.out.println("num is " + num);
-//            System.out.println("======");
+            System.out.println("x is " + x);
+            System.out.println("num is " + num);
+            System.out.println("======");
          }
 //        System.out.println("x is " + x);
 //        System.out.println("tmp is " + tmp);
