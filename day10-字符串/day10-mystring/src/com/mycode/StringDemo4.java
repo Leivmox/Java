@@ -18,7 +18,7 @@ public class StringDemo4 {
                 System.out.println("登录成功");
                 break;
             }
-            System.out.println("登录失败,请重新登录");
+            System.out.println("登录失败,请重新登录,还剩下" + (2 - i) + "次机会");
 
         }
     }
