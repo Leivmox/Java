@@ -1,4 +1,4 @@
-package com.mycode;
+package com.mycode.String;
 
 public class IdCardInfo {
     public static void main(String[] args) {
