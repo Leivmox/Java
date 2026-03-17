@@ -8,7 +8,8 @@ public class StudentSystem {
 
         //创建学生集合
         ArrayList<Student> list = new ArrayList<>();
-        loop: while (true) {
+        loop:
+        while (true) {
 
             System.out.println("=== 欢迎来到学生管理系统 ===");
             System.out.println("1.添加学生");
@@ -27,8 +28,8 @@ public class StudentSystem {
                 case "3" -> updateStudent(list);
                 case "4" -> queryStudent(list);
                 case "5" -> {
-                        System.out.println("退出");
-                        break loop;
+                    System.out.println("退出");
+                    break loop;
                 }
 
                 default -> System.out.println("输入错误");
@@ -48,12 +49,6 @@ public class StudentSystem {
         Scanner sc = new Scanner(System.in);
         System.out.println("请输入学生的id");
         String id = sc.next();
-        System.out.println("请输入学生的姓名");
-        String name = sc.next();
-        System.out.println("请输入学生的年龄");
-        int age = sc.nextInt();
-        System.out.println("请输入学生的住址");
-        String address = sc.next();
 
         //判断id是否已经存在
         for (int i = 0; i < list.size(); i++) {
@@ -62,6 +57,14 @@ public class StudentSystem {
                 return;
             }
         }
+
+        System.out.println("请输入学生的姓名");
+        String name = sc.next();
+        System.out.println("请输入学生的年龄");
+        int age = sc.nextInt();
+        System.out.println("请输入学生的住址");
+        String address = sc.next();
+
         Student s = new Student(id, name, age, address);
         list.add(s);
 
@@ -136,9 +139,9 @@ public class StudentSystem {
             System.out.println("当前无学生信息，请添加后再查询");
             return;
         } else {
-            System.out.println("id\t姓名\t年龄\t住址");
+            System.out.println("id\t\t姓名\t\t年龄\t\t住址");
             for (int i = 0; i < list.size(); i++) {
-                System.out.println(list.get(i).getId()+"\t"+list.get(i).getName()+"\t"+list.get(i).getAge()+"\t"+list.get(i).getAddress());
+                System.out.println(list.get(i).getId() + "\t\t" + list.get(i).getName() + "\t\t" + list.get(i).getAge() + "\t\t" + list.get(i).getAddress());
             }
         }
 
