@@ -41,6 +41,7 @@ hs_err_pid*
 
 # Default compiled output directory
 out/
+**/out/
 
 
 # ===================================================================
